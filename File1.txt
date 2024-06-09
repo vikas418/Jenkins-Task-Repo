@@ -9,7 +9,7 @@ folder('Maven/sample') {
 pipelineJob('maven/sample/app') {
     definition {
         cps {
-            script(readFileFromWorkspace('File1.txt'))
+            script(readFileFromWorkspace('File10.txt'))
             sandbox()
         }
     }
