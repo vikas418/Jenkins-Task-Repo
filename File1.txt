@@ -6,3 +6,11 @@ folder('Maven/sample') {
     displayName('sample')
     description('SubFolder for Maven Project')
 }
+pipelineJob('maven/sample/app') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('project-a-workflow.groovy'))
+            sandbox()
+        }
+    }
+}
