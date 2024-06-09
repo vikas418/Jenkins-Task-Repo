@@ -1,1 +1,8 @@
-Hello World
+folder('Maven') {
+    displayName('Maven')
+    description('Folder for Maven Project')
+}
+folder('Maven/sample') {
+    displayName('sample')
+    description('SubFolder for Maven Project')
+}
